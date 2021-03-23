@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Do It List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- <script src="node_modules/moment/min/moment.min.js"></script> -->
+    </head>
+    <body>
+ 
+        
+<div class="topnav">
+    <h2>My To-Do List</h2>
+</div>
+    
+<div id="sidebar">
+    <h3 id="Home">Home (all, sort by date)</h3>
+    <h3 id="Today">Today (filter home for time)</h3>
+    <h3 id="ThisWeek">This Week(same for week)</h3>
+
+    <h3 id="Projects">Projects
+
+    <label for="projectForm" class="icon-button">Add <span class="glyphicon glyphicon-plus-sign"></span></label>
+    <input type="checkbox" id="projectForm" name="projectForm" class="behind-glyphicon"> 
+    <div class="projectSubmitForm">
+
+    <form>
+        <input class="input" id="projectName" type="text" maxlength="25" size="25">
+       
+        <button class="projectSubmitButton icon-button" id="projectSubmitButton">
+        <span class="glyphicon glyphicon-ok"></span>
+        </button>
+
+        <button class="projectCloseButton icon-button" id="projectCloseButton">
+        <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </form>
+    </div>
+    </h3>
+    
+    <p></p>
+    <div id ="projectHolder">
+    </div>
+</div>
+
+<div id="taskListProjectName" class="projectName">
+    <span id="unifiedProjectName">    
+    <span id="projectPrefix"></span>
+    <span id="projectHeadline"></span>
+    </span>
+
+    <button id="taskBtn">Create Task</button>
+</div>
+
+
+    <div id="taskProjectHolder" class="taskProjectHolder" id="taskProjectHolder"></div>
+
+    <div id="taskHolder" class="taskHolder">
+
+</div>
+    
+<script src="main.js"></script>
+</body>
+</html> 
